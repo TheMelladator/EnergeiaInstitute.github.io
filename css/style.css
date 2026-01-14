@@ -1,11 +1,15 @@
 :root{
-  --primary: #0a3cff;
-  --dark: #111111;
-  --gray: #555555;
-  --light: #f5f7fa;
+  --blue-main: #0a3cff;
+  --blue-darck: #0a1f44;
+  --blue-soft: #e9f0ff;
+  --surface: #f4f6fb;
+  --card: #f9fbff;
+  --text-main: $0a1f44;
 }
 
 body{
+  background: var(--surface);
+  color: var(--text-main);
   padding-top: 70px
 }
 
@@ -30,7 +34,7 @@ h2{
   font-size: 1.8rem;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--primary);
+  border-bottom: 3px solid;
 }
 
 ul{
@@ -38,9 +42,11 @@ ul{
 }
 
 .section{
-  padding: 80px 20px;
+  background: linear-gradient(180deg, var(--surface), white);
+  border-radius: 40px;
+  padding: 80px 40px;
   max-width: 1100px;
-  margin: auto;
+  margin: 80px auto;
 }
 
 .section h2{
@@ -80,11 +86,12 @@ ul{
 }
 
 .card{
-  background: white;
+  background: var(--card);
   border-radius: 16px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(10,30,80,0.08);
   transition: 0.3s ease;
+  border: 1px solid rgba(10,60,255,0.05);
 }
 
 .card-grid{
@@ -100,7 +107,7 @@ ul{
 
 .card:hover{
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 50px rgba(10,60,255,0.15);
 }
 
 .cta{
