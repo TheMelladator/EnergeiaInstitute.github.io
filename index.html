@@ -57,8 +57,23 @@
 
 		<section>
 			<h2>Contacto</h2>
-			<p>Escribenos a:
-				contacto@tumarca.com</p>
+			<form action="https://formspree.io/f/mnjjnpjd" method="POST">
+				<label>
+					Nombre:<br>
+					<input type="text" name="nombre" required>
+				</label><br><br>
+
+				<label>
+					Correo:<br>
+					<input type="email" name="email" required> 
+				</label><br><br>
+
+				<label>
+					Mensaje:<br>
+					<textarea name="mensaje" rows="5" required></textarea>
+				</label><br><br>
+				<button type="submit">Enviar</button>
+			</form>
 		</section>
 	</body>
 </html>
