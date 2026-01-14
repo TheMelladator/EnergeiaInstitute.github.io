@@ -24,21 +24,46 @@ h1{
 }
 
 section{
-  max-width: 900px;
-  margin: 60px auto;
+  max-width: 960px;
+  margin: 80px auto;
   padding: 0 20px;
 }
 
 h2{
-  border-left: 5px solid var(--primary);
-  padding-left: 10px;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
 }
 
 ul{
   line-height: 1.8;
 }
 
+.hero{
+  background: linear-gradient(135deg, #0a3cff 0%, #0047b3 100%);
+  color: white;
+  text-aling: center;
+  padding: 120px 20px;
+}
+
+.hero .logo{
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.hero h1{
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.hero .tagline{
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .projects{
   border: 1px solid #eee;
   padding: 20px;
